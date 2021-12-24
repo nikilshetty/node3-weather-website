@@ -10,6 +10,8 @@ const { response } = require("express");
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 //custom directory for views
 const viewspath = path.join(__dirname, "../templates/views");
 app.set("views", viewspath);
@@ -114,6 +116,6 @@ app.get("*", (req, res) => {
 
 //is used to run only once
 
-app.listen(3000, () => {
-  console.log("Started Server on port 3000");
+app.listen(port, () => {
+  console.log(`Started Server on port ${port}`);
 });
