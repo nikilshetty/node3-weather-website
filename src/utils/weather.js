@@ -23,7 +23,9 @@ const forecast = (val1, val2, callback) => {
           " feels like " +
           body.current.feelslike +
           " weather desc " +
-          body.current.weather_descriptions[0]
+          body.current.weather_descriptions[0] +
+          "and observation time is " +
+          body.current.observation_time
       );
     }
   });
