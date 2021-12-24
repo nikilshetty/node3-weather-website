@@ -24,7 +24,7 @@ const forecast = (val1, val2, callback) => {
           body.current.feelslike +
           " weather desc " +
           body.current.weather_descriptions[0] +
-          "and observation time is " +
+          " and observation time is " +
           body.current.observation_time
       );
     }
